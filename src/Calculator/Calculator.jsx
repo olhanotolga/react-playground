@@ -338,7 +338,7 @@ class Calculator extends React.Component {
         }
 
         return (
-            <main>
+            <section className="component">
                 <header>
                     <h1>JS Calculator</h1>
                 </header>
@@ -379,7 +379,7 @@ class Calculator extends React.Component {
                         <button className="operation" id="calculate" onClick={this.calculate}>=</button>
                     </section>
                 </div>
-            </main>
+            </section>
         )
     }
 };

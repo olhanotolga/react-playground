@@ -1,8 +1,128 @@
+body {
+    background-color: darkslategrey;
+}
 * {
     font-family: monospace;
     font-size: 110%;
     box-sizing: border-box;
 }
+#root {
+    background-color: white;
+    min-height: 100vh;
+}
+
+/* HOME PAGE */
+.main-nav-menu {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+    padding: .5em 0 1em;
+    background-color: darkslategrey;
+}
+.nav-button {
+    padding: .5em .7em;
+    font-size: 90%;
+    text-transform: uppercase;
+    background-color: white;
+    border: .1em solid white;
+    outline: none;
+}
+.nav-button:focus, .nav-button:active {
+    border: .1em solid darkslategrey;
+}
+
+/* COMMON ELEMENTS */
+h1 {
+    text-align: center;
+}
+.component {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* CLASS TOPICS */
+h2 {
+    color: darkslategrey;
+}
+.topic-categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-size: 90%;
+}
+.topic-categories section {
+    margin: .5em 1em;
+    flex: 2 0;
+}
+.topic-categories ul {
+    font-size: 90%;
+}
+
+/* CLOCK */
+.timer {
+    font-size: 150%;
+    padding: 1em;
+    border: 2px solid darkslategrey;
+    background: linear-gradient(135deg, darkslategrey 0% 5%, transparent 5% 95%, darkslategrey 95% 100%),
+                linear-gradient(45deg, darkslategrey 0% 5%, transparent 5% 95%, darkslategrey 95% 100%);
+}
+.refresh-clock-btn {
+    margin: 1em auto;
+    padding: .2em .5em;
+}
+
+/* COUNTER */
+.counter-body {
+    display: flex;
+    margin: 1em auto;
+    padding: 1em;
+    border: 2px solid darkslategrey;
+}
+.counter-body * {
+    margin: auto .5em;
+}
+.inc-dec-btn {
+    background-color: darkslategrey;
+    color: white;
+    border-radius: 3px;
+}
+.reset-btn {
+    margin: 1em auto;
+    padding: .2em .5em;
+}
+
+/* COMMENTS */
+.comments {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-size: 80%;
+}
+.Comment {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 200px;
+    margin: 1em;
+    padding: 1em;
+    border: 2px solid darkslategrey;
+    text-align: center;
+    font-size: 100%;
+
+}
+.UserInfo-name {
+    font-weight: bold;
+    margin: .5em auto;
+}
+.Comment-date {
+    font-size: 90%;
+    margin: 1em auto .5em;
+}
+
+/* CALCULATOR */
 .calculator {
     display: flex;
     flex-direction: column;
@@ -10,9 +130,6 @@
     margin: auto;
     background-color: #000f0f;
     padding: .5em;
-}
-h1 {
-    text-align: center;
 }
 .display {
     background-color: #338888;

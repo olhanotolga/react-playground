@@ -36,11 +36,14 @@ class Clock extends React.Component {
     render() {
         console.log("render was called");
         return (
-            <div>
-                <h1>The time is ticking</h1>
-                <h2>It is {this.state.date.toLocaleTimeString()}.</h2>
-                <button onClick={this.refreshHandler}>Refresh</button>
-            </div>
+            <section className="component">
+                <header>
+                    <h1>Clock Component</h1>
+                </header>
+                <p>the time is ticking:</p>
+                <p className="timer">{this.state.date.toLocaleTimeString()}</p>
+                <button className="refresh-clock-btn" onClick={this.refreshHandler}>Refresh</button>
+            </section>
         );
     }
     

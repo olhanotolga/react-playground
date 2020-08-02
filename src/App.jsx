@@ -20,7 +20,7 @@ const comment = {
     date: new Date(),
     text: 'I have already looked under the rug',
     author: {
-        name: 'Lisa Rubbish',
+        name: 'Captain Rubbish',
         avatarUrl: 'https://picsum.photos/id/123/100/100'
     }
   }
@@ -48,100 +48,111 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <button
-          onClick={() => {
-            this.setState({
-              isClassTopicsVisible: true,
-              isClockVisible: false,
-              isCounterVisible: false,
-              isCommentVisible: false,
-              isCalculatorVisible: false
-            });
-          }}
-        >
-          Show Class Topics
-        </button>
+        <nav className="main-nav-menu">
+          <button className="nav-button"
+            onClick={() => {
+              this.setState({
+                isClassTopicsVisible: true,
+                isClockVisible: false,
+                isCounterVisible: false,
+                isCommentVisible: false,
+                isCalculatorVisible: false
+              });
+            }}
+          >
+            Show Class Topics
+          </button>
 
-        <button
-          onClick={() => {
-            this.setState({
-              isClassTopicsVisible: false,
-              isClockVisible: true,
-              isCounterVisible: false,
-              isCommentVisible: false,
-              isCalculatorVisible: false
-            });
-          }}
-        >
-          Show Clock
-        </button>
+          <button className="nav-button"
+            onClick={() => {
+              this.setState({
+                isClassTopicsVisible: false,
+                isClockVisible: true,
+                isCounterVisible: false,
+                isCommentVisible: false,
+                isCalculatorVisible: false
+              });
+            }}
+          >
+            Show Clock
+          </button>
 
-        <button
-          onClick={() => {
-            this.setState({
-              isClassTopicsVisible: false,
-              isClockVisible: false,
-              isCounterVisible: true,
-              isCommentVisible: false,
-              isCalculatorVisible: false
-            });
-          }}
-        >
-          Show Counter
-        </button>
+          <button className="nav-button"
+            onClick={() => {
+              this.setState({
+                isClassTopicsVisible: false,
+                isClockVisible: false,
+                isCounterVisible: true,
+                isCommentVisible: false,
+                isCalculatorVisible: false
+              });
+            }}
+          >
+            Show Counter
+          </button>
 
-        <button
-          onClick={() => {
-            this.setState({
-              isClassTopicsVisible: false,
-              isClockVisible: false,
-              isCounterVisible: false,
-              isCommentVisible: true,
-              isCalculatorVisible: false
-            });
-          }}
-        >
-          Show Comments
-        </button>
+          <button className="nav-button"
+            onClick={() => {
+              this.setState({
+                isClassTopicsVisible: false,
+                isClockVisible: false,
+                isCounterVisible: false,
+                isCommentVisible: true,
+                isCalculatorVisible: false
+              });
+            }}
+          >
+            Show Comments
+          </button>
 
-        <button
-          onClick={() => {
-            this.setState({
-              isClassTopicsVisible: false,
-              isClockVisible: false,
-              isCounterVisible: false,
-              isCommentVisible: false,
-              isCalculatorVisible: true
-            });
-          }}
-        >
-          Show Calculator
-        </button>
+          <button className="nav-button"
+            onClick={() => {
+              this.setState({
+                isClassTopicsVisible: false,
+                isClockVisible: false,
+                isCounterVisible: false,
+                isCommentVisible: false,
+                isCalculatorVisible: true
+              });
+            }}
+          >
+            Show Calculator
+          </button>
+        </nav>
 
-        {this.state.isClassTopicsVisible && <ClassTopics />}
-        {this.state.isClockVisible && <Clock />}
-        {this.state.isCounterVisible && <Counter />}
-        {this.state.isCommentVisible && 
-          <div>
-              <Comment 
-                  date={comment.date}
-                  text={comment.text}
-                  author={comment.author} 
-              />
-              <Comment 
-                  date={comment2.date}
-                  text={comment2.text}
-                  author={comment2.author}
-              />
-              <Comment 
-                  date={comment3.date}
-                  text={comment3.text}
-                  author={comment3.author}
-              />
-          </div>
-        }
-        {this.state.isCalculatorVisible && <Calculator />}
+        <main className="displayed-component">
+          {this.state.isClassTopicsVisible && <ClassTopics />}
+          {this.state.isClockVisible && <Clock />}
+          {this.state.isCounterVisible && <Counter />}
+          {this.state.isCommentVisible && 
+            <section className="component">
+              <header>
+                <h1>Comment components</h1>
+              </header>
+              <section className="comments">
+                <Comment 
+                    date={comment.date}
+                    text={comment.text}
+                    author={comment.author} 
+                />
+                <Comment 
+                    date={comment2.date}
+                    text={comment2.text}
+                    author={comment2.author}
+                />
+                <Comment 
+                    date={comment3.date}
+                    text={comment3.text}
+                    author={comment3.author}
+                />
+              </section>  
+            </section>
+          }
+          {this.state.isCalculatorVisible && <Calculator />}
+        </main>
+        
       </div>
+      
     );
   }
 
