@@ -6,23 +6,14 @@ class Counter extends React.Component {
     this.state = {
       count: 0,
     };
-
     this.increment = this.increment.bind(this);
   }
   increment() {
-    // this.setState((prevState) => ({
-    //   count: prevState.count + 1,
-    // }));
-
     this.setState({
       count: this.state.count + 1,
     });
   }
   decrement = () => {
-    // this.setState((prevState) => ({
-    //   count: prevState.count - 1,
-    // }));
-
     this.setState({
       count: this.state.count - 1,
     });
@@ -34,7 +25,7 @@ class Counter extends React.Component {
     return (
       <section className="component">
         <header>
-          <h1>Counter (just a time-waster)</h1>
+          <h1>Counter (ultimate time-waster)</h1>
         </header>
         <div className="counter-body">
           <span>Counter: {this.state.count}</span>

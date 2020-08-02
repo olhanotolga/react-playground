@@ -33,7 +33,6 @@ const comment = {
     }
   }
 
-
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -47,7 +46,7 @@ class App extends React.Component {
   }
   render() {
     return (
-      <div>
+      <div className="app">
         <nav className="main-nav-menu">
           <button className="nav-button"
             onClick={() => {

@@ -1,5 +1,6 @@
 body {
-    background-color: darkslategrey;
+    /* background-color: darkslategrey; */
+    background-color: #151616;
     padding: 1em;
 }
 * {
@@ -10,7 +11,10 @@ body {
 #root {
     background-color: white;
     min-height: 90vh;
+    display: flex;
+    flex-direction: column;
 }
+
 
 /* HOME PAGE */
 .main-nav-menu {
@@ -19,26 +23,28 @@ body {
     justify-content: center;
     margin-bottom: 1em;
     padding: 0 0 1em;
-    background-color: darkslategrey;
+    background-color: #151616;
 }
 .nav-button {
     padding: .5em .7em;
     font-size: 90%;
     text-transform: uppercase;
-    background-color: darkslategrey;
+    background-color: #151616;
     color: white;
     border: .1em solid white;
     outline: none;
 }
 .nav-button:hover {
-    background-color: rgb(56, 95, 95);
+    background-color: #202222;
 }
 .nav-button:focus, .nav-button:active {
     background-color: white;
+    background-color: #ffa600;
     color: black;
 }
 
 /* COMMON ELEMENTS */
+
 h1 {
     text-align: center;
 }
@@ -50,7 +56,9 @@ h1 {
 
 /* CLASS TOPICS */
 h2 {
-    color: darkslategrey;
+    display: inline-block;
+    color: #ffa600;
+    border-bottom: 3px solid darkslategrey;
 }
 .topic-categories {
     display: flex;
@@ -64,15 +72,17 @@ h2 {
 }
 .topic-categories ul {
     font-size: 90%;
+    color: #333;
 }
 
 /* CLOCK */
 .timer {
     font-size: 150%;
     padding: 1em;
-    border: 2px solid darkslategrey;
-    background: linear-gradient(135deg, darkslategrey 0% 5%, transparent 5% 95%, darkslategrey 95% 100%),
-                linear-gradient(45deg, darkslategrey 0% 5%, transparent 5% 95%, darkslategrey 95% 100%);
+    border: 3px solid darkslategrey;
+    border-radius: 3px;
+    background: linear-gradient(135deg, #ffa600 0% 5%, darkslategrey 5% 6%, transparent 6% 94%, darkslategrey 94% 95%, #ffa600 95% 100%),
+                linear-gradient(45deg, #ffa600 0% 5%, darkslategrey 5% 6%, transparent 6% 94%, darkslategrey 94% 95%, #ffa600 95% 100%);
 }
 .refresh-clock-btn {
     margin: 1em auto;
@@ -97,13 +107,15 @@ h2 {
     display: flex;
     margin: 1em auto;
     padding: 1em;
-    border: 2px solid darkslategrey;
+    border: 3px solid darkslategrey;
+    border-radius: 3px;
 }
 .counter-body * {
     margin: auto .5em;
 }
 .inc-dec-btn {
-    background-color: darkslategrey;
+    padding: .05em .4em;
+    background-color: #ffa600;
     color: white;
     border-radius: 3px;
 }
@@ -153,6 +165,7 @@ h2 {
 .Comment-date {
     font-size: 90%;
     margin: 1em auto .5em;
+    border-top: 2px solid #ffa600;
 }
 
 /* CALCULATOR */
