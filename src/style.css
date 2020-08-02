@@ -1,5 +1,6 @@
 body {
     background-color: darkslategrey;
+    padding: 1em;
 }
 * {
     font-family: monospace;
@@ -8,27 +9,33 @@ body {
 }
 #root {
     background-color: white;
-    min-height: 100vh;
+    min-height: 90vh;
 }
 
 /* HOME PAGE */
 .main-nav-menu {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 1em;
-    padding: .5em 0 1em;
+    padding: 0 0 1em;
     background-color: darkslategrey;
 }
 .nav-button {
     padding: .5em .7em;
     font-size: 90%;
     text-transform: uppercase;
-    background-color: white;
+    background-color: darkslategrey;
+    color: white;
     border: .1em solid white;
     outline: none;
 }
+.nav-button:hover {
+    background-color: rgb(56, 95, 95);
+}
 .nav-button:focus, .nav-button:active {
-    border: .1em solid darkslategrey;
+    background-color: white;
+    color: black;
 }
 
 /* COMMON ELEMENTS */
@@ -69,7 +76,20 @@ h2 {
 }
 .refresh-clock-btn {
     margin: 1em auto;
-    padding: .2em .5em;
+    padding: .3em .5em;
+    background-color: darkslategrey;
+    color: white;
+    border: 3px solid rgb(56, 95, 95);
+    border-radius: 3px;
+    outline: none;
+}
+.refresh-clock-btn:hover {
+    background-color: rgb(56, 95, 95);
+    border: 3px solid darkslategrey;
+}
+.refresh-clock-btn:active {
+    background-color: white;
+    color: darkslategrey;
 }
 
 /* COUNTER */
@@ -89,7 +109,20 @@ h2 {
 }
 .reset-btn {
     margin: 1em auto;
-    padding: .2em .5em;
+    padding: .3em .5em;
+    background-color: darkslategrey;
+    color: white;
+    border: 3px solid rgb(56, 95, 95);
+    border-radius: 3px;
+    outline: none;
+}
+.reset-btn:hover {
+    background-color: rgb(56, 95, 95);
+    border: 3px solid darkslategrey;
+}
+.reset-btn:active {
+    background-color: white;
+    color: darkslategrey;
 }
 
 /* COMMENTS */
