@@ -5,11 +5,11 @@ import * as serviceWorker from './serviceWorker';
 
 import App from "./App";
 
-// import Clock from "./clock/Clock";
-// import Comment from "./comment/Comment";
-// import comment from "./comment/Comment";
+// import Clock from "./Clock/Clock";
+// import Comment from "./Comment/Comment";
+// import Comment from "./Comment/Comment";
 
-// import tick from "./simple-clock/tick";
+// import tick from "./SimpleClock/tick";
 
 // const comment = {
 //   date: new Date(),

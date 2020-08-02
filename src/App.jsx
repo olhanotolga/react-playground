@@ -1,10 +1,12 @@
 import React from "react";
 
-import Clock from "./clock/Clock";
-import Counter from "./counter/Counter";
+import Clock from "./Clock/Clock";
+import Counter from "./Counter/Counter";
 import ClassTopics from "./ClassTopics/ClassTopics";
-import Comment from "./comment/Comment";
+import Comment from "./Comment/Comment";
 import Calculator from "./Calculator/Calculator";
+
+import './style.css';
 
 const comment = {
     date: new Date(),

@@ -1,5 +1,5 @@
 import React from 'react';
-import './Calc.css';
+// import '../style.css';
 
 class Calculator extends React.Component {
     constructor(props) {
