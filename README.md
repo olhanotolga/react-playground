@@ -1,6 +1,6 @@
 # React Playground
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was first bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and later migrated to Vite.
 
 ## Contents
 
@@ -14,6 +14,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, run:
 
-`npm start`
+`npm run dev`
 
-The script runs the app in the development mode. Opens [http://localhost:3000](http://localhost:3000) in the browser.
+The script runs the app in the development mode. Opens [http://localhost:5173](http://localhost:5173) in the browser.
